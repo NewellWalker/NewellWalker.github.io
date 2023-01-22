@@ -33,7 +33,7 @@ body {
     margin: 0 15px;
   }
 
-    .portrait {
+  .portrait {
     width: 100%;
     height: min-content;
     flex-wrap: wrap;
