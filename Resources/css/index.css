@@ -120,7 +120,7 @@ footer {
   }
 
   /* Reduce the size of the images */
-  img {
+  .portait {
       max-width: 100%;
   }
 }
