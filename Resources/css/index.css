@@ -33,11 +33,11 @@ body {
     margin: 0 15px;
   }
 
-  .portrait {
-    vertical-align: middle;
-    width: 450px;
-    max-height: 650px;
-  }
+    .portrait {
+    width: 100%;
+    height: min-content;
+    flex-wrap: wrap;
+    }
 
   .about-me-container {
     display: flex;
@@ -87,7 +87,7 @@ form {
 label {
     margin-bottom: .25em;
     font-size: 1.25em;
-    width: 350px;
+    width: 10em;
 }
 
 textarea {
@@ -114,13 +114,16 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  /* Change the layout of the sections when the screen width is less than 600px */
-  section {
-      flex-wrap: wrap;
+  .about-me-container {
+    flex-direction: column;
   }
 
-  /* Reduce the size of the images */
-  .portait {
-      max-width: 100%;
+  img {
+    width: min-content;
+    height: auto;
+  }
+
+  .contact-me {
+    flex-direction: column;
   }
 }
